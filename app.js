@@ -1,4 +1,4 @@
-// app.js
+import { useState} from 'react'
 function MovieCatalog() {
   const [movies, setMovies] = React.useState([
     { title: 'The Shawshank Redemption', year: 1994, watched: false },
@@ -39,7 +39,7 @@ function MovieCatalog() {
       <input
         type="text"
         className="search-input"
-        placeholder="Search movies..."
+        placeholder="Buscar Filmes"
         value={searchTerm}
         onChange={handleSearch}
       />
